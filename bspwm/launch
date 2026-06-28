@@ -1,0 +1,8 @@
+#!/bin/sh
+setxkbmap br &
+xsetroot -cursor_name left_ptr &
+nitrogen --restore &
+picom &
+pkill polybar
+polybar &
+cpupower-performance 

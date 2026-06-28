@@ -1,0 +1,79 @@
+#
+# wm independent hotkeys
+#
+
+#Firefox
+alt + shift + f
+	firefox
+
+# Neovim
+alt + n
+	alacritty;nvim
+
+# terminal emulator
+alt + Return
+	alacritty
+
+# program launcher
+Super_L
+	rofi -show drun
+
+# powermenu
+Super_R
+	~/.config/rofi/powermenu/type-2/powermenu.sh
+
+# make sxhkd reload its configuration files:
+alt + r
+	pkill -USR1 -x sxhkd
+
+#Print Screen
+Print
+	maim --hidecursor ~/Imagens/prints/$(date +%Y-%b-%d--%H-%M-%S_maim | tr A-Z a-z).png
+
+#
+# bspwm hotkeys
+#
+
+# quit/restart bspwm
+alt + shift + {w,r}
+	bspc {quit,wm -r}
+
+# close and kill
+alt + {_,shift + }q
+	bspc node -{c,k}
+
+#
+# state/flags
+#
+
+# set the window state
+alt + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+#
+# focus/swap
+#
+
+# focus the node in the given direction
+alt + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# focus or send to the given desktop
+alt + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+#
+# move/resize
+#
+
+# expand a window by moving one of its side outward
+alt + ctrl + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# contract a window by moving one of its side inward
+alt + super + {h,j,k,l}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# move a floating window
+alt + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}

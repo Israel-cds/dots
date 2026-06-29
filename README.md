@@ -1,9 +1,9 @@
 # dots
 Dependências:
-bspwm
-picom
-polybar
-alacritty
-rofi
-fastfetch
-sxhkd
+-bspwm
+-picom
+-polybar
+-alacritty
+-rofi
+-fastfetch
+-sxhkd

@@ -1,11 +1,17 @@
 # dots
 
-# Dependências:
+configurações de coisas que eu uso:
 
-- bspwm
-- picom
-- polybar
-- alacritty
-- rofi
-- fastfetch
-- sxhkd
+- bspwm (Window manager)
+
+- picom (Compositor)
+
+- polybar (Barra de Status)
+
+- alacritty (Terminal)
+
+- rofi (App Launcher)
+
+- fastfetch (Informações do Sistema)
+
+- sxhkd (teclas de atalho)

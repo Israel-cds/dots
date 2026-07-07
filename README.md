@@ -17,3 +17,5 @@ configurações de coisas que eu uso:
 - fastfetch (Informações do Sistema)
 
 - sxhkd (teclas de atalho)
+
+- starship (shell prompt para o terminal)

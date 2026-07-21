@@ -19,3 +19,5 @@ configurações de coisas que eu uso:
 - sxhkd (teclas de atalho)
 
 - starship (shell prompt para o terminal)
+
+- NeoVim (Editor de Texto e Código baseado no Vim)

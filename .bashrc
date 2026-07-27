@@ -6,6 +6,7 @@ export PATH="$PATH:$HOME/bin"
 alias ls='ls --color=auto'
 alias ra=ranger
 alias ff=fastfetch
+alias x5="xrandr -s 5"
 
 alias xq=xbps-query
 alias xu="sudo xbps-install -Su"
@@ -17,4 +18,4 @@ PS1='[\u@\h \w]\$ '
 
 # Run when bash is open
 ff
-eval "$(starship init bash)"
+eval "$(oh-my-posh init bash --config ~/.cache/oh-my-posh/themes/gruvbox.omp.json)"

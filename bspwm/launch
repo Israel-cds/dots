@@ -1,8 +1,7 @@
 #!/bin/sh
 setxkbmap br &
 xsetroot -cursor_name left_ptr &
-nitrogen --restore &
+feh --bg-scale ~/Imagens/wallpapers/The_Backwater.png
 picom &
 pkill polybar
 polybar &
-cpupower-performance 

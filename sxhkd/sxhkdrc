@@ -8,12 +8,15 @@ alt + Return
 
 # program launcher
 Super_L
-	rofi -show drun
+	dmenu_run -b
 
 # powermenu
-alt + Super_L
-	~/.config/rofi/powermenu/type-2/powermenu.sh
-
+ctrl+ alt + q
+	loginctl poweroff
+ctrl + alt + s
+	loginctl suspend
+ctrl + alt + r
+	loginctl reboot
 # make sxhkd reload its configuration files:
 alt + r
 	pkill -USR1 -x sxhkd

@@ -4,7 +4,7 @@ configurações de coisas que eu uso:
 
 - bspwm (Window manager)
 
-- nitrogen (Wallpaper Manager)
+- feh (Wallpaper Manager and img viewer)
 
 - picom (Compositor)
 
